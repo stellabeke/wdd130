@@ -44,7 +44,7 @@ aside img{
     position: relative;
 }
 aside h2{
-    position: relative;
+    position: absolute;
     top: auto;
     left: auto;
 }
