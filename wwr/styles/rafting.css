@@ -195,3 +195,54 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+/* Contact Page Styles */
+.contact-info,
+.team,
+form {
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.team-photos {
+    display: flex;
+    gap: 20px;
+}
+
+.team-photos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid blue;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}
