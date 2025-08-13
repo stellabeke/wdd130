@@ -86,13 +86,13 @@ nav a:hover {
 
 h1 {
     position: absolute;
-    top: 30px;
+    top: 0px;
     left: 0;
     right: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(84, 108, 144, 0.8);
+    background-color: rgba(150, 162, 179, 0.8);
     color: white;
     margin: 0;
 }
@@ -285,54 +285,59 @@ footer {
     border: 3px solid rgb(41, 41, 66);
 }
 
-/* ===== TRIPS PAGE STYLES ===== */
-.trips-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-/* Trip Comparison Table */
-.trips-table {
+/* ===== TRIPS PAGE ===== */
+table {
     width: 100%;
     border-collapse: collapse;
-    margin: 30px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    z-index: 10;
 }
-
-.trips-table th,
-.trips-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-}
-
-.trips-table th {
-    background-color: var(--primary-color);
+.trips-title {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(84, 108, 144, 0.8);
+    box-shadow: inset;
     color: white;
+    margin: 0;
+}
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
 }
 
-.trips-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+table th {
+    background-color: #94d2bd;
+    color: #000;
 }
 
-/* Trip Cards Grid */
-.trip-cards {
+table tr:nth-child(even) {
+    background-color: #e9f5f2;
+}
+
+/* === Trip Cards Grid === */
+.trip-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin: 40px 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .trip-card {
-    background: white;
+    background: #fff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.8s ease;
 }
 
 .trip-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
 }
 
 .trip-card img {
@@ -341,32 +346,49 @@ footer {
     object-fit: cover;
 }
 
-.trip-info {
-    padding: 20px;
+.trip-card-content {
+    padding: 1rem;
 }
 
-.trip-info h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
+.trip-card h3 {
+    color: #005f73;
+    margin-bottom: 0.5rem;
 }
 
-.trip-info .price {
+.trip-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.trip-price {
     font-weight: bold;
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    margin: 10px 0;
+    color: #ee9b00;
+    margin-bottom: 1rem;
 }
 
-.cta-button {
+.trip-cta {
     display: inline-block;
-    background: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
+    background-color: #0a9396;
+    color: #fff;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 10px;
+    transition: background 0.3s ease;
 }
 
-.cta-button:hover {
-    background: var(--secondary-color);
+.trip-cta:hover {
+    background-color: #00707c;
+}
+
+/* === Footer === */
+footer {
+    background-color: #005f73;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer .sociallinks img {
+    margin: 0 0rem;
 }
